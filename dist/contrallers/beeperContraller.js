@@ -95,6 +95,9 @@ function updateBeeperStatusById(req, res) {
         crudData.updateBeeperById(id, newBeeper);
         res.send(newBeeper);
     }
+    setTimeout(() => {
+        crudData.updateBeeperStatusById(id, "detonated");
+    }, 10000);
 }
 function deleteBeeperById(req, res) {
     const id = Number(req.params.id);
