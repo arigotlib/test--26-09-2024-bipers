@@ -9,3 +9,6 @@ userRouter.get('/api/beepers/:id', userContraller.getBeeperById);
 userRouter.get('/api/beepers/status/:status', userContraller.getBeepersByStatus);
 userRouter.put('/api/beepers/:id/status', userContraller.updateBeeperStatusById);
 userRouter.delete('/api/beepers/:id', userContraller.deleteBeeperById);
+
+
+export default userRouter
