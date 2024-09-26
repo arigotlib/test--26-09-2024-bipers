@@ -1,13 +1,24 @@
-import { Ibeeper } from "../medels/beeperModel";
-import { Status } from "../enums/enum";
+import { Ibeeper } from "../medels/beeperModelToDataBase";
+import { status } from "../enums/enum";
 export const beepers: Ibeeper[] = [
     {
         id: 1,
         name: "Beepers",
-        status: Status.manufactured,
+        status: status.manufactured,
         created_at: new Date(),
         detonated_at: new Date(),
-        latitude: 0,
-        longitude: 0
+        latitude: 35.78674,
+        longitude: 34.59708
+    },
+    {
+        id: 2,
+        name: "Beepers",
+        status: status.manufactured,
+        created_at: new Date(),
+        detonated_at: new Date(),
+        latitude: 33.72141,
+        longitude: 36.59793
     }
+
+    
 ]
