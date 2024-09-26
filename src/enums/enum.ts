@@ -1,4 +1,4 @@
-export enum status {
+export enum Estatus {
     manufactured = "manufactured",
     assembled = "assembled",
     shipped = "shipped",
